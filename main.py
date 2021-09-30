@@ -5,6 +5,7 @@ from tkinter import ttk
 #cores
 cor1 = '#3b3b3b' #preta
 cor2 = '#ffffff' #branca
+cor3 = '#48b3e0' #azul
 
 janela = Tk()
 janela.title('')
@@ -27,5 +28,10 @@ frame_direita.place(x=454, y=2)
 
 estilo = ttk.Style(janela)
 estilo.theme_use('clam')
+
+#-----------------------Labels para frame_cima-----------------
+
+l_app_nome = Label(frame_cima, text='Calculadora de unidades de medidas', height=1, padx=0, relief='flat', anchor='center', font=('ivy 15 bold'), bg=cor2, fg=cor3)
+l_app_nome.place(x=50, y=10)
 
 janela.mainloop()
