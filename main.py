@@ -22,4 +22,9 @@ frame_esquerda.place(x=2, y=54)
 frame_direita = Frame(janela, width=198, height=260, bg='white', pady=0, padx=3, relief='flat')
 frame_direita.place(x=454, y=2)
 
+#-----------------------estilo para janela-------------------
+
+estilo = ttk.Style(janela)
+estilo.theme_use('clam')
+
 janela.mainloop()
